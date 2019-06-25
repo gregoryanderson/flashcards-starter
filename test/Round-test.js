@@ -14,4 +14,12 @@ describe('Round', function() {
     const round = new Round();
     expect(round).to.be.an.instanceOf(Round);
   });
+
+  it('should know the card being played', function(){
+    const card = new Card(1, 'What allows you to define a set of related information using key-value pairs?', ['object', 'array', 'function'], 'object');
+    const round = new Round(card);
+
+    round.returnCurrentCard(card);
+    expect(round.returnCurrentCard()).to.equal(card)
+  });
 });
