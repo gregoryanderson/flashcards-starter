@@ -7,9 +7,9 @@ class Deck {
     return this.cardDeck.length;
   }
 
-  addCardToDeck(card) {
-    this.cardDeck.push(card)
-  }
+  // addCardToDeck(card) {
+  //   this.cardDeck.push(card)
+  // }
 }
 
 module.exports = Deck

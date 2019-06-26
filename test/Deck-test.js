@@ -24,16 +24,16 @@ describe('Deck', function() {
   });
 
   it('should be able to count how many cards are in the deck', function () {
-    const card1 = new Card(1, 'What is Robbie\'s favorite animal', ['sea otter', 'pug', 'capybara'], 'sea otter'); 
-    const card2 = new Card(14, 'What organ is Khalid missing?', ['spleen', 'appendix', 'gallbladder'], 'gallbladder');
+    const card1 = new Card({id: 1, question: 'What is Robbie\'s favorite animal', answers: ['sea otter', 'pug', 'capybara'], correctAnswer: 'sea otter'}); 
+    const card2 = new Card({id: 14, question: 'What organ is Khalid missing?', answers: ['spleen', 'appendix', 'gallbladder'], correctAnswer: 'gallbladder'});
     const deck = new Deck([card1, card2]);
 
     deck.countCards()
     expect(deck.countCards()).to.equal(2)
 
-    const card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
-    deck.addCardToDeck(card3);
+    // const card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
+    // deck.countCards();
     
-    expect(deck.countCards()).to.equal(3)
+    // expect(deck.countCards()).to.equal(3)
   })
 });

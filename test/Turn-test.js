@@ -42,7 +42,7 @@ describe('Turn', function() {
   })
 
   it('should be able to evaluate a guess', function(){
-    const card = new Card(1, 'What allows you to define a set of related information using key-value pairs?', ['object', 'array', 'function'], 'object')
+    const card = new Card({id: 1, question: 'What allows you to define a set of related information using key-value pairs?', answers: ['object', 'array', 'function'], correctAnswer: 'object'});
     const turn1 = new Turn('Guess', card);
     const turn2 = new Turn('object', card);
 
@@ -53,7 +53,7 @@ describe('Turn', function() {
   })
 
   it('should be able to give feedback', function() {
-    const card = new Card(1, 'What allows you to define a set of related information using key-value pairs?', ['object', 'array', 'function'], 'object')
+    const card = new Card({id: 1, question: 'What allows you to define a set of related information using key-value pairs?', answers: ['object', 'array', 'function'], correctAnswer: 'object'});
     const turn1 = new Turn('Guess', card);
     const turn2 = new Turn('object', card);
 
