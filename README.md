@@ -10,3 +10,4 @@ The purpose of this project was to take a deep dive into TDD, or test driven dev
 
 To play the game, open the terminal and enter the appropriate filepath. Then, enter `node index.js`. This will prompt a message and the first question. Choose the correct answers and get an fun response; Choose an incorrect answer and get a not-so-fun response. Good luck!
 
+![flashcards gif](FlashcardsGif.gif)
