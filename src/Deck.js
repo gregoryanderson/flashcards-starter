@@ -6,10 +6,6 @@ class Deck {
   countCards(){
     return this.cardDeck.length;
   }
-
-  // addCardToDeck(card) {
-  //   this.cardDeck.push(card)
-  // }
 }
 
 module.exports = Deck
